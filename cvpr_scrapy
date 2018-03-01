@@ -1,9 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import sys
 
-
-base_url = "http://openaccess.thecvf.com/content_cvpr_2016/papers/"
+base_url = "http://openaccess.thecvf.com/content_cvpr_" + sys.argv[1] +"/papers/"
 page = requests.get(base_url)
 soup = BeautifulSoup(page.text,'lxml')
 paper_list_a = soup.find_all('a')
