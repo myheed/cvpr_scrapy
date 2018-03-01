@@ -3,4 +3,5 @@ Requred package:
 - BeautifulSoup
 - lxml
 
-# 想要下载对应年份直接修改代码中的2016即可
+到对应的目录执行：
+python cvpr_scrapy.py 2015
